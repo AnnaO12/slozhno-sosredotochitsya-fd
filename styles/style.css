@@ -63,7 +63,7 @@
 .header__title {
   align-self: center;
   color: var(--title-color);
-  text-shadow: 4px 4px 0px var(--shadow-color);
+  text-shadow: 4px 4px 0 var(--shadow-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 0.83;
 }
@@ -71,7 +71,7 @@
 .header__subtitle {
   justify-self: end;
   align-self: end;
-  margin-bottom: 66px;
+  margin-bottom: 56px;
   font-weight: var(--font-weight-bold);
   font-size: var(--main-font-size);
   line-height: 1.3;
@@ -227,7 +227,7 @@ main {
 
 @media (width >= 768px) {
   .header {
-    min-height: 768px;
+    min-height: 850px;
     padding: 20px;
   }
 
@@ -247,7 +247,7 @@ main {
 
   .header__subtitle {
     max-width: 364px;
-    margin-bottom: 183px;
+    margin-bottom: 163px;
   }
 
   .content-section {
@@ -318,6 +318,10 @@ main {
 }
 
 @media (width >= 1024px) {
+  .header {
+    min-height: 768px;
+  }
+
   .header__theme-menu-list {
     display: flex;
     flex-direction: row;
@@ -330,7 +334,7 @@ main {
 
   .header__subtitle {
     max-width: 491px;
-    margin-bottom: 134px;
+    margin-bottom: 115px;
   }
 
   .section-stack .section__content {
